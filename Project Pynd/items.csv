@@ -1,0 +1,8 @@
+name,type,dmg.,desc.
+Rusty Sword,Weapon:Sword,1,rustysword.txt
+Excallibur,Weapon:Sword,500,excallibur.txt
+Shotgun,Weapon:Gun,50,shotgun.txt
+Minigun,Weapon:Gun,20,None
+Guardian Spear,Weapon:Halberd,250,None
+Health Potion,Limited_consumable:Potion,0,None
+Fisherman's hat,Wearable:headwear,0,None
