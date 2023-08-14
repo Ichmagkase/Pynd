@@ -40,11 +40,6 @@ prompt = input(f"Would you like to delete {sys.argv[2]}? Y/n ")
 if prompt.lower() == 'y':
     os.remove(sys.argv[2])
 
-prompt = input(f"Would you like to move {database_file} to databases? Y/n ")
-
-if prompt.lower() == 'y':
-    os.rename(database_file, f'databases\{database_file}')
-
 # Commit the changes and close the connection
 conn.commit()
 conn.close()
