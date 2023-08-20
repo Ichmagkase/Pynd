@@ -1,0 +1,5 @@
+TODO :D 
+
+create item interface with pyqt5 tools editor thingy
+- create the main item interface that displays currently selected category, and the items inside it alongside description and
+     tier

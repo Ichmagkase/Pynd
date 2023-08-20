@@ -1,0 +1,44 @@
+Items {
+    item_id 
+    name 
+    description 
+    type 
+    rarity 
+    weight 
+    value 
+    required_level 
+    required_stats
+    is_craftable
+    materials
+    creator
+    created_at
+    effects 
+    tags   
+}
+
+Weapon {
+    id 
+    damage
+    damage_type
+    peoperties
+    range
+    two_handed
+}
+
+equippable {
+    id
+    is_cosmetic
+    equiptment_slot
+    armor_class
+    armor_type
+    bulk
+}
+
+consumable {
+    id 
+    charges 
+    activation_time
+    duration
+    recharge
+    limits
+}
