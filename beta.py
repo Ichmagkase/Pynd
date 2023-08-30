@@ -103,19 +103,15 @@ class MyWindow(QMainWindow):
     def displayType(self):
         self.type = self.inst.openType(self.selectItem)
         displaytype = []
-
         for i in self.type:
             displaytype.append(i)
         
         self.label2.setText(displaytype[0][0])
-
         self.update()
         
     def displayDamage(self):
-
         self.damage = self.inst.openDmg(self.selectItem)
         displaydamage = []
-
         for i in self.damage:
             displaydamage.append(i)
         
@@ -123,7 +119,6 @@ class MyWindow(QMainWindow):
         self.update()
 
     def displayDescription(self):
-
         self.desc = self.inst.openDescription(self.selectItem)
         displaydesc = []
         for i in self.desc:
