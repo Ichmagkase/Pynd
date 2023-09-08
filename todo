@@ -1,5 +1,13 @@
 TODO :D 
 
-create item interface with pyqt5 tools editor thingy
-- create the main item interface that displays currently selected category, and the items inside it alongside description and
-     tier
+redo item interface with pyqt5-tools designer
+- create the main item interface that:
+     displays a list of item names in alphabetical order by default, option to filter based on different item properties, and 
+     a search bar that searches the table in order of priority Name, type, and key words in any special properties or description documents. include a ? option to select why an item appears in a search result.
+
+     Has a + icon at the bottom right which guides the user through an item creation screen
+
+- create the item creation screen 
+     With structure based on the flow chart in my microsoft whiteboard.
+     Each node of user input can get stored as another row in the current active database file.
+
