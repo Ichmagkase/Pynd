@@ -125,23 +125,24 @@ class MyWindow(QMainWindow):
             print("Please select 'Next Item' before selecting the item type, damage, or description. This will be fixed in the future.")
             exit()
         displaytype = []
-
         for i in self.type:
             displaytype.append(i)
         
         self.label2.setText(displaytype[0][0])
-
         self.update()
         
     #call openDmg() from dbRetriever and display the return value to label2
     def displayDamage(self):
+<<<<<<< HEAD
         try:
             self.damage = self.inst.openDmg(self.selectItem)
         except:
             print("Please select 'Next Item' before selecting the item type, damage, or description. This will be fixed in the future.")
             exit()
+=======
+        self.damage = self.inst.openDmg(self.selectItem)
+>>>>>>> c582b6d7f9ac8e765561964bbc7543b9903eb0d3
         displaydamage = []
-
         for i in self.damage:
             displaydamage.append(i)
         
@@ -150,11 +151,15 @@ class MyWindow(QMainWindow):
 
     #call openDescription() from dbRetriever() and display the return value to label2
     def displayDescription(self):
+<<<<<<< HEAD
         try:
             self.desc = self.inst.openDescription(self.selectItem)
         except:
             print("Please select 'Next Item' before selecting the item type, damage, or description. This will be fixed in the future.")
             exit()
+=======
+        self.desc = self.inst.openDescription(self.selectItem)
+>>>>>>> c582b6d7f9ac8e765561964bbc7543b9903eb0d3
         displaydesc = []
         for i in self.desc:
             displaydesc.append(i)
