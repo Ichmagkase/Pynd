@@ -122,8 +122,10 @@ class MyWindow(QMainWindow):
         try:
             self.type = self.inst.openType(self.selectItem)
         except:
-            print("Please select 'Next Item' before selecting the item type, damage, or description. This will be fixed in the future.")
-            exit()
+            self.label1.setText("Please select 'Next Item' first")
+            self.update()
+            return
+
         displaytype = []
         for i in self.type:
             displaytype.append(i)
@@ -133,15 +135,13 @@ class MyWindow(QMainWindow):
         
     #call openDmg() from dbRetriever and display the return value to label2
     def displayDamage(self):
-<<<<<<< HEAD
         try:
             self.damage = self.inst.openDmg(self.selectItem)
         except:
-            print("Please select 'Next Item' before selecting the item type, damage, or description. This will be fixed in the future.")
-            exit()
-=======
-        self.damage = self.inst.openDmg(self.selectItem)
->>>>>>> c582b6d7f9ac8e765561964bbc7543b9903eb0d3
+            self.label1.setText("Please select 'Next Item' first")
+            self.update()
+            return 
+            
         displaydamage = []
         for i in self.damage:
             displaydamage.append(i)
@@ -151,15 +151,13 @@ class MyWindow(QMainWindow):
 
     #call openDescription() from dbRetriever() and display the return value to label2
     def displayDescription(self):
-<<<<<<< HEAD
         try:
             self.desc = self.inst.openDescription(self.selectItem)
         except:
-            print("Please select 'Next Item' before selecting the item type, damage, or description. This will be fixed in the future.")
-            exit()
-=======
-        self.desc = self.inst.openDescription(self.selectItem)
->>>>>>> c582b6d7f9ac8e765561964bbc7543b9903eb0d3
+            self.label1.setText("Please select 'Next Item' first")
+            self.update()
+            return
+        
         displaydesc = []
         for i in self.desc:
             displaydesc.append(i)
