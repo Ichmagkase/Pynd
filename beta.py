@@ -46,7 +46,7 @@ class MyWindow(QMainWindow):
         self.setGeometry(200, 200, 500, 750)
         self.setWindowTitle("Pynd")
 
-        self.instanceDatabase = 'kitchen.db'
+        self.instanceDatabase = 'itemsList.db'
         self.inst = dbRetriever(self.instanceDatabase)
         self.itemIndex = 0
 
